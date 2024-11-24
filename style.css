@@ -70,11 +70,13 @@ a:hover {
 
 #hamburger-nav {
   display: none;
+  
 }
 
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  z-index: 99;
 }
 
 .hamburger-icon {
@@ -102,6 +104,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  z-index: 99;
 }
 
 .menu-links a {
@@ -457,23 +460,4 @@ footer {
 
 footer p {
   text-align: center;
-}
-
-
-/* Timeline styles */
-.timeline {
-  position: relative;
-  margin: 20px 0;
-  padding: 0;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  bottom: 0;
-  width: 3px;
-  background-color: #ddd;
-  transform: translateX(-50%);
 }
