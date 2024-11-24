@@ -331,7 +331,21 @@ section {
   margin-bottom: 2rem;
 }
 
+.experience-subsub-title {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 1.50rem;
+  margin-bottom: 2rem;
+}
+
 .experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.experience-article-container{
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -424,6 +438,16 @@ article .icon {
   height: 2.5rem;
 }
 
+.work_date {
+  color: gray;
+  font-weight: lighter;
+}
+
+.work_title {
+  color: black;
+  font-weight: lighter;
+}
+
 /* FOOTER SECTION */
 
 footer {
@@ -433,4 +457,23 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+
+/* Timeline styles */
+.timeline {
+  position: relative;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  width: 3px;
+  background-color: #ddd;
+  transform: translateX(-50%);
 }
